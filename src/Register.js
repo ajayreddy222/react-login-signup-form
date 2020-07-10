@@ -1,9 +1,6 @@
 	import React, {Component} from "react"
 	import "./App.css"
 
-
-
-
 	class App extends Component{
 
 		constructor(){
@@ -48,79 +45,34 @@
 
 			render(){
 				return(
-
 					<div className="app">
-
-					<div className="form-app">
-					<h1>Create Account</h1>
-					<form onSubmit={this.handleSubmit}>
-					<div className="firstName">
-					<label htmlFor="firstName">First Name</label>
-					<input 
-					type="text" 
-					className="" 
-					placeholder="First Name" 
-					
-					name="firstName" 
-										onChange={this.handleChange}
-					/>
+						<div className="form-app">
+							<h1>Create Account</h1>
+							<form onSubmit={this.handleSubmit}>
+								<div className="firstName">
+									<label htmlFor="firstName">First Name</label>
+									<input type="text" className="" placeholder="First Name" name="firstName" onChange={this.handleChange}/>
+								</div>
+								<div className="lastName">
+									<label htmlFor="lastName">Last Name</label>
+									<input type="text" className="" placeholder="Last Name" name="lastName" onChange={this.handleChange}/>
+								</div>
+								<div className="email">
+									<label htmlFor="email">Email</label>
+									<input type="email" className="" placeholder="email" name="email" onChange={this.handleChange}/>
+								</div>
+								<div className="password">
+									<label htmlFor="password">Password</label>
+									<input type="password" className="" placeholder="password" name="password" onChange={this.handleChange}/>
+								</div>
+								<div className="createAccount">
+									<button type="submit">Create Account</button>
+									<small>Already Have An Account?</small>
+								</div>
+							</form>
+						</div>
 					</div>
-
-					<div className="lastName">
-					<label htmlFor="lastName">Last Name</label>
-					<input 
-					type="text" 
-					className="" 
-					placeholder="Last Name" 
-					
-					name="lastName" 
-
-					onChange={this.handleChange}
-					/>
-					</div>
-
-					<div className="email">
-					<label htmlFor="email">Email</label>
-					<input 
-					type="email" 
-					className="" 
-					placeholder="email" 
-					
-					name="email" 
-
-					onChange={this.handleChange}
-					/>
-					</div>
-
-					<div className="password">
-					<label htmlFor="password">Password</label>
-					<input 
-					type="password"
-					className="" 
-					placeholder="password" 
-					 
-					name="password" 
-
-					onChange={this.handleChange}
-					/>
-					</div>
-
-					<div className="createAccount">
-					<button type="submit">Create Account</button>
-					<small>Already Have An Account?</small>
-
-					</div>
-
-
-
-
-					</form>
-					</div>
-					</div>
-
-
-					)
-				}
-
-			}
-			export default App;
+				)
+		}
+}
+export default App;
